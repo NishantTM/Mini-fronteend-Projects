@@ -1,0 +1,566 @@
+.header-site {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  margin: 0px;
+  text-decoration: none;
+  background-color: black;
+
+  /* color: #FFFFFF; */
+}
+
+.parent-leftheader ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  text-decoration: none;
+  /* text-emphasis-color: white; */
+  padding: 10px 40px 20px 400px;
+  margin: 40px;
+}
+
+/* .parent-leftheader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+        } */
+
+.swiftware-section {
+  align-items: center;
+  /* justify-content: space-between; */
+  display: flex;
+  padding: 0px 40px 0px 10px;
+}
+
+.parent-rightheadersection ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+  padding: 10px 200px 10px 40px;
+  /* text-decoration: none; */
+  /* margin: 40px; */
+  /* background-color: black; */
+}
+
+.parent-leftheader a {
+  text-decoration: none;
+  color: white;
+}
+
+.parent-rightheadersection a {
+  text-decoration: none;
+  color: white;
+}
+
+/* home-f-container */
+
+.home-f-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100%;
+  background: url(https://files.cdn-files-a.com/uploads/9510651/2000_gi-6960ad184ea6f.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* .main-content */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* discover */
+.discover p {
+  background-color: aliceblue;
+  padding: 4px 6px;
+  border-radius: 10px;
+}
+.home-heading {
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-subtitle h2 {
+  color: white;
+  text-shadow: 3px 3px 5px red;
+}
+.cta-btn a {
+  /* list-style: none; */
+  text-decoration: none;
+  border-radius: 0px;
+  padding: 6px 10px;
+  color: aliceblue;
+  background-color: red;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100vh;
+  background-repeat: no-repeat;
+  padding: 10px 0px 0px 40px;
+}
+.destination-heading {
+  align-items: center;
+  justify-content: center;
+}
+.image-container h2 {
+  background-position: center;
+}
+
+/* Main page conataineer setup */
+
+.destination-section {
+  color: white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 40px 20px;
+}
+
+.section-title {
+  text-align: center;
+  color: #0b132b;
+  margin-bottom: 40px;
+  position: relative;
+  display: block;
+  /* left: 50%; */
+  transform: translateX(-50%);
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 3px;
+  background-color: #e60026;
+}
+.destination-container {
+  /* color: white; */
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.preview-card {
+  flex: 1;
+  max-width: 400px;
+  background-color: black;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 6px 16px;
+}
+
+.image-container img {
+  width: 100%;
+  height: 320px;
+  display: block;
+  /* object-fit: cover; */
+}
+.card-content {
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+.card-content h6 {
+  margin: 0 0 15px 0;
+  font-size: 1.3rem;
+}
+
+.card-content p {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+.btn-learn-more {
+  display: inline-block;
+  background-color: #e60026;
+  color: white;
+  text-decoration: none;
+  padding: 10px 24px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+.btn-learn-more:hover {
+  background-color: #b8001c;
+}
+
+.destination-list {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 650px;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  background-color: #0b122c;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.list-item.active {
+  background-color: #e60026; /* Crimson Red active bar background */
+}
+/* WORKING HOVER EFFECT: Brightens non-active items, shifts slightly right */
+.list-item:not(.active):hover {
+  background-color: #1a254a; /* Lighter blue on hover */
+  transform: translateX(4px); /* Subtle nudge to show it's interactive */
+}
+
+.list-item.active:hover {
+  background-color: #c4001f; /* Deeper crimson when hovering over active element */
+}
+
+.list-item .thumb {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.about-section {
+  background-color: #0b122c; /* Matching dark theme color background */
+  padding: 80px 40px;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-title {
+  font-size: 2.2rem;
+  color: #e60026;
+  margin: 0 0 20px 0;
+  position: relative;
+  display: inline-block;
+}
+
+.about-title::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #e60026;
+}
+
+.about-lead {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.about-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 15px;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+.about-list li {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #cbd5e1;
+}
+
+.about-foot {
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.btn-learn-book {
+  display: inline-block;
+  background-color: #e60026;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 30px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  transition: background-color 0.2s ease;
+}
+.btn-learn-book:hover {
+  background-color: #b8001c;
+}
+
+/* Circular Mask Right Column Box Container */
+.image-container-one {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.oval-mask {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%; /* Makes the presentation a perfect circle layout shape */
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.oval-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.features-section {
+  background-color: #ffffff; /* Clean white canvas background split separator */
+  padding: 80px 40px;
+}
+
+.features-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  /* Clean CSS Grid configurations mapping 3 clean columns dynamically layout */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 30px;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px; /* Matching subtle rounded corners in image frames */
+  margin-bottom: 15px;
+}
+.feature-card h4 {
+  font-size: 1.15rem;
+  color: #0b122c;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0;
+}
+/* shuttle site */
+.shuttle-videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #1a254a;
+  padding: 100px 100px;
+  border-radius: 8px;
+  width: 100%;
+  /* max-width: 1200px; */
+}
+.shuttle-heading {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+  /* cursor: pointer; */
+}
+
+.shuttle-heading :hover {
+  background-color: red;
+}
+
+.yachtcruise-section {
+  width: 100%;
+  padding: 0px 30px;
+}
+.yachtMainimage-section {
+  display: flex;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0px 20px;
+  gap: 10px;
+  justify-content: center;
+}
+
+/* .main-image {
+  width: 60%;
+  height: auto;
+} */
+/* yacht cruise section */
+.yachtImage-section {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 90%;
+  cursor: pointer;
+  /* display: block; */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 10px;
+  object-fit: cover;
+}
+
+.yachtcruise-section {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.yachtcruise-headersection {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+  object-fit: cover;
+}
+
+.yacht-title {
+  font-size: 35px;
+  cursor: pointer;
+  justify-content: center;
+  display: flex;
+}
+
+.yacht-title :hover {
+  background: #b8001c;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 6px;
+}
+
+.grid-c {
+  /* display: flex; */
+  height: 50vh;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  position: relative;
+  grid-template-columns: 2fr 1fr 1fr; /* 3-column layout on desktop */
+}
+.g-image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* sea huttle section */
+
+.seahuttle-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c4001f;
+  color: white;
+}
+.seahuttle-titlesection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.seahuttle-heading h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seahuttle-heading :hover {
+  background-color: white;
+}
+
+.seahuttle-heading {
+  margin-bottom: 20px; /* Adds clean breathing room below the title */
+  font-size: 3rem;
+}
+
+.seahuttle-paragraph {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* 
+
+.list-item span {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.list-item:hover {
+  opacity: 0.9;
+} */
+/* .destination-subtitleTwo p {
+  background-position: center;
+} */
+
+/* .destination-btn {
+  color: white;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+}
+.destination-btn h6 {
+  text-shadow: 3px 3px 5px red;
+} */
