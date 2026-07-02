@@ -428,10 +428,10 @@
 }
 .yachtMainimage-section {
   display: flex;
-  align-items: start;
+  align-items: center;
   max-width: 1200px;
-  margin: 0px 20px;
-  gap: 10px;
+  margin: 0px 40px;
+  gap: 15px;
   justify-content: center;
 }
 
@@ -442,12 +442,12 @@
 /* yacht cruise section */
 .yachtImage-section {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: row; */
   width: 70%;
   height: 90%;
-  cursor: pointer;
+  /* cursor: pointer; */
   /* display: block; */
   background-size: cover;
   background-position: center;
@@ -487,80 +487,53 @@
 }
 
 .grid-c {
-  /* display: flex; */
+  display: flex;
   height: 50vh;
   width: 100%;
+  height: 100%;
   max-width: 1200px;
-  flex-direction: column;
+  /* flex-direction: column; */
   position: relative;
   grid-template-columns: 2fr 1fr 1fr; /* 3-column layout on desktop */
+  gap: 15px;
+  margin: 0 auto;
 }
+
 .g-image {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 10px;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
+  /* display: flex; */
 }
 
+/* Paragraph section */
+.yachttitle-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 20px;
+}
+.yacht-datasection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0 auto;
+}
 /* sea huttle section */
 
-.seahuttle-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #c4001f;
-  color: white;
-}
-.seahuttle-titlesection {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-}
-.seahuttle-heading h1 {
+/* contact section */
+.map-section {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.seahuttle-heading :hover {
-  background-color: white;
+.googleMap-section {
+  max-width: 1500px;
+  height: 100%;
+  width: 100%;
 }
-
-.seahuttle-heading {
-  margin-bottom: 20px; /* Adds clean breathing room below the title */
-  font-size: 3rem;
-}
-
-.seahuttle-paragraph {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
-
-/* 
-
-.list-item span {
-  font-size: 15px;
-  font-weight: bold;
-}
-
-.list-item:hover {
-  opacity: 0.9;
-} */
-/* .destination-subtitleTwo p {
-  background-position: center;
-} */
-
-/* .destination-btn {
-  color: white;
-  border-radius: 20px;
-  padding: 10px 30px;
-  border-radius: 30px;
-}
-.destination-btn h6 {
-  text-shadow: 3px 3px 5px red;
-} */
