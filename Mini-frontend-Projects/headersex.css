@@ -1,0 +1,99 @@
+/* Header Container */
+.headerMain-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-section img {
+  height: 60px;
+  margin-right: 10px;
+}
+.logo-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  /* flex-direction: column; */
+}
+.navbar ul li a:hover {
+  color: #f4b400; /* Golden highlight */
+}
+
+/* Icons */
+.icons {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: auto;
+  gap: 20px;
+}
+
+.icons i {
+  margin: 0 10px;
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  /* display: flex; */
+}
+
+/* Reservation Button */
+.reservation button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.reservation button:hover {
+  background: #f4b400;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
