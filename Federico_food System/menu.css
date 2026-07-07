@@ -1,0 +1,99 @@
+.menu-section {
+    padding: 60px 20px;
+    background-color: #fff8f0;
+    background: linear-gradient(to bottom, #fff8f0, #fff3e0);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* box-shadow: 1px 2px; */
+}
+
+.menu-btns {
+    font-size: 2rem;
+    color: #333;
+    /* gap: 15px;
+    display: flex; */
+    margin-bottom: 30px;
+}
+
+.menu-btns button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #f4b400;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.price {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #f4b400;
+}
+
+.menu-btns button:hover {
+    background-color: #d99a00;
+    transform: scale(1.05);
+}
+
+.menu-Parentimages {
+    display: grid;
+    /* flex-direction: row; */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+
+/* Individual menu cards */
+
+.menu-icons {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.menu-icons:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.menu-icons img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.menu-icons h2 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.menu-icons p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.main-menu {
+    background-color: yellow;
+    color: black;
+}
+
+
+/* .heading-view {
+  justify-content: center;
+}
